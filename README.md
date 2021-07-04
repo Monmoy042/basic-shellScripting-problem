@@ -1,6 +1,16 @@
+## What is Shell
+
+<p align='justify'>Shell is an or environment that can run our commands, programs and shell scripts. It can take inputs from user and executes the programs based on the input. There are different types of shell available. Most popular and used Bourne Shell Again or Bash.</p>
+
+Different types of Bourne Shell list has given below:
+
+- sh (Bourne Shell)
+- ksh (Korn Shell)
+- bash (Bourne Again Shell)
+
 ## What is Bash
 
-## What is Shell
+<p align='justify'>Bash is the shell or command language interpreter for the GNU operating system. Bash or Bourne Again Shell is the most used shell that comes with by default in the most popular distribution.</p>
 
 ## Change the file permission
 
