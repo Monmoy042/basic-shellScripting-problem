@@ -9,5 +9,5 @@ else
     echo "You entered an odd number."
 fi
 
-random=$(( $RANDOM%10 ))
+random=$(( $RANDOM%1200 ))
 echo $random
