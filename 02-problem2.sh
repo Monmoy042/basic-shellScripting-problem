@@ -1,5 +1,4 @@
 #!/bin/bash
-: '
 echo -e "Enter an integer: \c"
 read num1
 echo -e "Enter an integer: \c"
@@ -20,22 +19,23 @@ echo "The division of $num1 and $num2 is:$div"
 
 mod=$(( $num1 % $num2 ))
 echo "The modulus of $num1 and $num2 is:$mod"
-'
-# num1=20
-# num2=10
-# sum=$( expr $num1 + $num2 )
-# echo $sum
-# sub=$( expr $num1 - $num2 )
-# echo $sub
-# pro=$( expr $num1 \* $num2 )
-# echo $pro
-# div=$( expr $num1 / $num2 )
-# echo $div
 
-# conert hexadecimal to decimal
-# read hex
-# echo -n "Hexadecimal number for $hex is: "
-# echo "obase=10;ibase=16;$hex" | bc
+
+num1=20
+num2=10
+sum=$( expr $num1 + $num2 )
+echo $sum
+sub=$( expr $num1 - $num2 )
+echo $sub
+pro=$( expr $num1 \* $num2 )
+echo $pro
+div=$( expr $num1 / $num2 )
+echo $div
+
+# convert hexadecimal to decimal
+read hex
+echo -n "Hexadecimal number for $hex is: "
+echo "obase=10;ibase=16;$hex" | bc
 
 
 # In this method we cannot do any arithmetic operations using floating number
