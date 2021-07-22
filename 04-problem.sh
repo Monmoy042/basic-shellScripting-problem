@@ -1,48 +1,44 @@
 #!/bin/bash
-
+# Simple Calculator Script
 printf "Which operation you want to do? \n 1)Addition \n 2)Substraction \n 3)Multiplication \n 4)Division \n 5)Reaminder \n 6)Square Root \n"
 read option
 res=0
 
-if [ $option -eq 1 ]
-then
+# Input two numbers using function
+input() {
     echo -e "Enter a number: \c"
     read num1 
     echo -e "Enter another number: \c"
-    read num2    
+    read num2
+}
+
+if [ $option -eq 1 ]
+then  
+    input
     res=` echo "$num1+$num2" |bc`
     echo "Addition of $num1 and $num2 is: $res"
+
 elif [ $option -eq 2 ]
 then
-    echo -e "Enter a number: \c"
-    read num1 
-    echo -e "Enter another number: \c"
-    read num2 
+    input
     res=` echo "$num1-$num2" |bc`
     echo "Subtraction of $num1 and $num2 is: $res"
+
 elif [ $option -eq 3 ]
 then
-    echo -e "Enter a number: \c"
-    read num1 
-    echo -e "Enter another number: \c"
-    read num2 
+    input
     res=` echo "$num1*$num2" |bc`
     echo "Multiplication of $num1 and $num2 is: $res"
+
 elif [ $option -eq 4 ]
 then
-    echo -e "Enter a number: \c"
-    read num1 
-    echo -e "Enter another number: \c"
-    read num2 
+    input
     res=` echo "scale=2;$num1/$num2" |bc`
     echo "Dvition of $num1 and $num2  is: $res"
 
 elif [ $option -eq 5 ]
 then
-    echo -e "Enter a number: \c"
-    read num1 
-    echo -e "Enter another number: \c"
-    read num2 
+    input
     res=` echo "$num1%$num2" |bc`
     echo "Reaminder of $num1 and $num2  is: $res"
 
